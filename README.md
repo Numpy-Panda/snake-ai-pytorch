@@ -1,10 +1,35 @@
-# Teach AI To Play Snake! Reinforcement Learning With PyTorch and Pygame
+# Teach AI To Play Snake! Reinforcement Learning With PyTorch
 
-In this Python Reinforcement Learning Tutorial series we teach an AI to play Snake! We build everything from scratch using Pygame and PyTorch. The tutorial consists of 4 parts:
+This is a repository based on PyTorch that utilizes reinforcement learning to train an AI to play the snake game. The purpose of this repository is to **document my journey of learning reinforcement learning**.
 
-You can find all tutorials on my channel: [Playlist](https://www.youtube.com/playlist?list=PLqnslRFeH2UrDh7vUmJ60YrmWd64mTTKV)
+# Introduction
 
-- Part 1: I'll show you the project and teach you some basics about Reinforcement Learning and Deep Q Learning.
-- Part 2: Learn how to setup the environment and implement the Snake game.
-- Part 3: Implement the agent that controls the game.
-- Part 4: Implement the neural network to predict the moves and train it.
+The game "Snake" involves controlling a growing line or snake as it moves around a game board, consuming food and avoiding obstacles. The goal is to achieve the highest score possible before the snake crashes into a wall or its own body.
+
+Reinforcement learning (RL) is a type of machine learning that involves an **agent** interacting with an **environment** and learning to make decisions based on rewards or punishments received for its actions. Through trial-and-error, the agent develops a policy that maximizes its expected long-term **reward**s. Reinforcement learning has been applied to a wide range of domains, from playing games and controlling robots to managing financial portfolios and optimizing energy systems. 
+
+## Explanation of used terms
+In reinforcement learning:
+
+**Environment**: is the agent’s world in which it lives and interacts.
+
+**Agent**: is the learner or decision maker that takes actions and interacts with the environment.
+
+**State**: is the representation of the situation or condition of the agent and the environment at a given time.
+
+**Reward**: is a numerical feedback from the environment that tells the agent how good its action was.
+
+**Value Function**: is a function that estimates how good a state or an action is for the agent in terms of expected future reward.
+
+**Q-learning**: is a classical RL algorithm of learning value function.
+
+**Deep Q-learning**: is an algorithm that uses a deep neural network to approximate the value function of taking an action in a state.
+
+# Methods
+
+This repository utilizes the Deep Q-network (DQN) approach to train an AI to play the snake game. The network is implemented as a simple multi-layer perceptron, which takes the current state of the game as input and outputs the value corresponding to all admissible actions at the current state.
+
+
+
+
+
