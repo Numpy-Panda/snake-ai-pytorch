@@ -1,4 +1,6 @@
-# Teach AI To Play Snake! Reinforcement Learning With PyTorch
+# Teach AI To Play Snake! Reinforcement Learning With PyTorch (will be finished before 17th March)
+
+**I modified and ran the code locally, and the code changes and technical explanation for this repo will be available before 17th March 2023**
 
 This is a repository based on PyTorch that utilizes reinforcement learning to train an AI to play the snake game. The purpose of this repository is to **document my journey of learning reinforcement learning**.
 
