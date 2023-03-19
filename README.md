@@ -42,8 +42,11 @@ The multi-layer perceptron, also known as the DQN network, takes as input the ga
 
 There are four inputs related to the food, namely whether the food is located above, below, to the left or to the right of the snake's head. If the condition holds true, the information is input into the network with a value of 1. Otherwise, the information is input as 0. The inputs relevant to whether the snake can survive is whether there is a snake's body or a boundary within a block range in front, left, and right directions of the snake's head, and whether there is a snake's body within a three-block range in seven directions behind and around the snake's head. If these conditions are met, the information is inputted into the network as a numerical value of 1. If not, the information is inputted as 0.
 
+
 <p align="center">
   <img src=img/7_directions_collision_detection.png>
+  <br> 
+  <em>Figure 1: Collision Detection in 7 Directions with 3 squares</em>
 </p>
 
 
