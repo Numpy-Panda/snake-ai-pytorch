@@ -7,7 +7,7 @@
 
 
 
-This is a repository based on PyTorch that utilizes reinforcement learning to train an AI to play the snake game. The purpose of this repository is to.
+This is a repository based on PyTorch that utilizes reinforcement learning to train an AI to play the snake game. The purpose of this repository is to record my journal to Reinforcement learning.
 
 # Introduction
 
