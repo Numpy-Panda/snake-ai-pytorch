@@ -1,6 +1,6 @@
 # Teach AI To Play Snake! Reinforcement Learning With PyTorch (to be finished)
 
-Some equations and other parts needed to be added.
+##Some equations and other parts needed to be added.##
 
 
 ![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTY1NWExYzFmNjg1OGQ1ZTAxMmEyZTI2N2YxZjgzZGJlMDc1NzQ1MSZjdD1n/TofIFMgQ8bgLKZQ9xl/giphy.gif)
@@ -41,6 +41,11 @@ This repository utilizes the Deep Q-network (DQN) approach to train an AI to pla
 The multi-layer perceptron, also known as the DQN network, takes as input the game state, which comprises the positional information of the food and the critical information for the snake's survival (to avoid collisions with the snake's own body or the game boundary). After passing through this simple multi-layer perceptron, the input state is mapped into a three-dimensional vector. The values of this vector represent the quality of three possible actions, namely moving forward, leftward, or rightward, given the current game state input to the network. 
 
 There are four inputs related to the food, namely whether the food is located above, below, to the left or to the right of the snake's head. If the condition holds true, the information is input into the network with a value of 1. Otherwise, the information is input as 0. The inputs relevant to whether the snake can survive is whether there is a snake's body or a boundary within a block range in front, left, and right directions of the snake's head, and whether there is a snake's body within a three-block range in seven directions behind and around the snake's head. If these conditions are met, the information is inputted into the network as a numerical value of 1. If not, the information is inputted as 0.
+
+<p align="center">
+  <img src=img/7_directions_collision_detection.png>
+</p>
+
 
 ## Reward Function
 
