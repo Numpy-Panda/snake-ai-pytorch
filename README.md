@@ -48,8 +48,12 @@ However, this simplistic Reward Function may result in the phenomenon of "Reward
 
 In contrast to supervised learning with deep learning, which assumes that each training sample is independent, RL assumes that the training samples are highly correlated. This can lead to slow convergence of the RL model, necessitating the use of an experience replay mechanism to store the agent's experience, represented as et = (st, at, rt, st+1 ). During the training process, a small batch of experience samples is randomly extracted from the memory buffer D each time, and the network parameters are updated using the stochastic gradient descent algorithm. The experience replay mechanism breaks the correlations between the samples by randomly sampling historical data, while the reuse of experiences increases the efficiency of data usage.
 
-To enhance the stability of the DQN algorithm, in addition to the Q-network that updates the neural network parameters, a target Q-network is employed to estimate the Q-value for the next state, which represents the expected cumulative long-term reward from that state.
+To enhance the stability of the DQN algorithm, in addition to the Q-network that updates the neural network parameters, a target Q-network is employed to estimate the Q-value for the next state, which represents the expected cumulative long-term reward from that state. A discount factor that is less than 1  used to make the agent focus more on the current rewards, rather than the long-term high rewards.
 
+## exploration and exploitation
+
+
+In the game of Snake, "Exploration and Exploitation" refers to a tradeoff between trying new actions ("exploration") and taking the best known action ("exploitation"). This tradeoff is implemented by gradually decreasing the randomness of the agent's moves as it plays more games, to encourage it to increasingly rely on its learned policy (exploitation) while still occasionally exploring new actions to avoid getting stuck in suboptimal patterns. In the preceding dozens of game rounds, we endeavored to induce the agent to take actions that were as stochastic as possible. On the one hand, this was to foster the agent's realization that it could execute any of the three actions of moving forward, turning left, and turning right to control the snake. On the other hand, it was also to encourage the agent to explore the boundaries of the game and learn that colliding with them would result in receiving negative rewards.
 
 
 
