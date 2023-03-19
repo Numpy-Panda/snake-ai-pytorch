@@ -44,8 +44,11 @@ In order to facilitate and instruct the agent to play the game effectively, we h
 However, this simplistic Reward Function may result in the phenomenon of "Reward Hacking." This arises when the agent, engaged in playing the game of snake, is rewarded with a negative value of -10 for directing the snake to a distant location away from its initial position, which leads to a collision with the wall. At this stage, the agent is unaware that eating food will result in a positive value of +10 as a reward. Consequently, to avoid receiving a negative reward of -10, the agent may resort to employing the strategy of making the snake move in circles indefinitely, ensuring that each action yields a reward of 0. Therefore, we have incorporated a condition in our reward function to prevent the agent from making the snake move in circles indefinitely. This involves rewarding the agent with a penalty of -10 if the snake is not directed to consume food within a certain period of time.
 
 
+## Experience Replay Mechanism and Target Network
 
+In contrast to supervised learning with deep learning, which assumes that each training sample is independent, RL assumes that the training samples are highly correlated. This can lead to slow convergence of the RL model, necessitating the use of an experience replay mechanism to store the agent's experience, represented as et = (st, at, rt, st+1 ). During the training process, a small batch of experience samples is randomly extracted from the memory buffer D each time, and the network parameters are updated using the stochastic gradient descent algorithm. The experience replay mechanism breaks the correlations between the samples by randomly sampling historical data, while the reuse of experiences increases the efficiency of data usage.
 
+To enhance the stability of the DQN algorithm, in addition to the Q-network that updates the neural network parameters, a target Q-network is employed to estimate the Q-value for the next state, which represents the expected cumulative long-term reward from that state.
 
 
 
