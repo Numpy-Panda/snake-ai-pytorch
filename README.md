@@ -2,6 +2,11 @@
 
 
 
+
+![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTY1NWExYzFmNjg1OGQ1ZTAxMmEyZTI2N2YxZjgzZGJlMDc1NzQ1MSZjdD1n/TofIFMgQ8bgLKZQ9xl/giphy.gif)
+
+
+
 This is a repository based on PyTorch that utilizes reinforcement learning to train an AI to play the snake game. The purpose of this repository is to.
 
 # Introduction
@@ -56,4 +61,6 @@ To enhance the stability of the DQN algorithm, in addition to the Q-network that
 In the game of Snake, "Exploration and Exploitation" refers to a tradeoff between trying new actions ("exploration") and taking the best known action ("exploitation"). This tradeoff is implemented by gradually decreasing the randomness of the agent's moves as it plays more games, to encourage it to increasingly rely on its learned policy (exploitation) while still occasionally exploring new actions to avoid getting stuck in suboptimal patterns. In the preceding dozens of game rounds, we endeavored to induce the agent to take actions that were as stochastic as possible. On the one hand, this was to foster the agent's realization that it could execute any of the three actions of moving forward, turning left, and turning right to control the snake. On the other hand, it was also to encourage the agent to explore the boundaries of the game and learn that colliding with them would result in receiving negative rewards.
 
 
+# Experiment
 
+..
