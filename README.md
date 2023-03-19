@@ -1,4 +1,4 @@
-# Teach AI To Play Snake! Reinforcement Learning With PyTorch (will be finished before 19th March)
+# Teach AI To Play Snake! Reinforcement Learning With PyTorch (to be finished)
 
 
 
