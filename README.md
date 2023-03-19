@@ -1,6 +1,6 @@
 # Teach AI To Play Snake! Reinforcement Learning With PyTorch (to be finished)
 
-##Some equations and other parts needed to be added.##
+## Some equations and other parts needed to be added.
 
 
 ![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTY1NWExYzFmNjg1OGQ1ZTAxMmEyZTI2N2YxZjgzZGJlMDc1NzQ1MSZjdD1n/TofIFMgQ8bgLKZQ9xl/giphy.gif)
